@@ -1,0 +1,9 @@
+dpu_list:
+  - list1:
+      - String: 通信管理机编号
+      - String: C端/S端
+      - String: 通道数量
+  - list2:
+      - String: 串口编号
+      - String: IP地址
+      - String: 端口

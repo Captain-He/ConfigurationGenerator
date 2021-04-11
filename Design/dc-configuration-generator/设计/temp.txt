@@ -1,0 +1,44 @@
+业务类
+ReadFormFile  //读取表格文件 
++ReturnTable(文件路径，开始行，sheetName):String table[][];
+
+施工记录 ConstructionRecord
+-HashMap<int acquisitionServerID, AcquisitionServer acquisitionServer>
++getAcquisitionServer( int acquisitionServerID ):AcquisitionServer
+
+
+集中器型号 ConcentratorModel
++getInstrumentModelByName() //通过仪器型号 名字 获得集中器
+
+电力仪表型号 PowerMeterModel
++getInstrumentModelByName() //通过仪器型号 名字 获得电力仪表
+
+
+传感器型号 SensorModel
++getSensorModelByName() //通过仪器型号 名字 获得电力仪表
+
+
+
+
+实体类+++++++++++++
+AcquisitionServer //采集服务器
+-HashMap<int communicationManagementID, CommunicationManagement communicationManagement>
++getCommunicationManagement( int communicationManagementID ):CommunicationManagement
+
+CommunicationManagement//通信管理机
+-HashMap<int concentratorID,Concentrator concentrator>
++getConcentrator(int concentratorID ):Concentrator 
+
+Concentrator//集中器  PowerMeter Concentrator
+-HashMap<int realDataStartAddress,Sensor sensor>
++getSensor(int realDataStartAddress):Sensor
+
+Sensor //传感器  PowerSensor TemperatureSensor
+
+RegisterSegment //寄存器段
+ 
+DataItem // 数据项
+
+
+
+
