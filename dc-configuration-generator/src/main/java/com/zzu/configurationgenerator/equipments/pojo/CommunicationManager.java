@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -21,7 +22,7 @@ public class CommunicationManager {
 	private String clientOrServer; //C端/S端
 	private String subPCId;//PC编号(如是C端)
 	private String numOfSerialChannels;//串行通道数量
-	private String [] bus_Ip_Port_Mapping;//总线/IP/端口映射关系
+	private Map<String,String[]> bus_Ip_Port_Mapping;//总线/IP/端口映射关系
 	private Map<Integer,TemperConcentrator> temperConcentratorMap;//通信管理机下的测温集中器列表
 	private Map<Integer,PowerMeter> powerMeterMap;//通信管理机下的电力仪表列表
 }
